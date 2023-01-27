@@ -141,3 +141,7 @@ sh -i ~/.ssh/id_rsa ubuntu@ipAddress
 ssh -i ~/.ssh/id_rsa ubuntu@3.90.203.23
   
 ``
+
+
+NB:  We can use this to make it woks as master & nodes by listening the nodes and others:
+kops export kubecfg $NAME --admin
