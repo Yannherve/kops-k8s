@@ -137,7 +137,7 @@ sudo passwd ubuntu
 
 13 # IF you want to SSH to Kubernetes Master or Nodes Created by KOPS. You can SSH From KOPS_Server
 
-sh -i ~/.ssh/id_rsa ubuntu@ipAddress
+ssh -i ~/.ssh/id_rsa ubuntu@ipAddress
 ssh -i ~/.ssh/id_rsa ubuntu@3.90.203.23
   
 ``
@@ -145,3 +145,4 @@ ssh -i ~/.ssh/id_rsa ubuntu@3.90.203.23
 
 NB:  We can use this to make it woks as master & nodes by listening the nodes and others:
 kops export kubecfg $NAME --admin
+First run the command:     source .bashrc     to refresh before running the command on top.
